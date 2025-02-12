@@ -1,0 +1,41 @@
+<!-- webcam.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webcam Capture</title>
+  <!-- <link href="{{url_for('static',filename='css/output.css')}}" rel="stylesheet">
+    -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../static/js/webcam.js" defer></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+  <div class="container mx-auto px-4 py-8">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white rounded-lg shadow-lg p-6">
+        <h1 class="text-2xl font-bold text-center mb-6 text-gray-800">Webcam Capture</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <video id="video" class="w-full h-auto rounded-lg border-2 border-gray-300" width="640" height="480"
+              autoplay>
+            </video>
+            <button id="capture"
+              class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-200">
+              Take Photo
+            </button>
+          </div>
+          <div>
+            <canvas id="canvas" class="w-full h-auto rounded-lg border-2 border-gray-300" width="640" height="480">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="webcam.js"></script>
+</body>
+
+</html>
