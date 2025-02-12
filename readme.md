@@ -1,6 +1,11 @@
+
+# Desenvolvedores
+- Kauan Olival Lopes
+
 # Aplicação de Portfólio em Flask
 
 Esta é uma aplicação web baseada em Flask que mostra o que foi densenvolivido na aula de Framework para Desenvolvimento Web.
+
 
 ## Funcionalidades
 
